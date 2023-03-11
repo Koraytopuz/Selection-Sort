@@ -1,0 +1,37 @@
+Soru:[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Big-O gösterimini yazınız.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+Cevap:
+1.Adım 22, 27 ile karşılaştırılır. Sıralı dizi: [22, 27, 16, 2, 18, 6]
+2.Adım 16, 27 ve 22 arasında kalır. Sıralı dizi: [16, 22, 27, 2, 18, 6]
+3. Adım 2, 27, 22 ve 16 arasında kalır. Sıralı dizi: [2, 16, 22, 27, 18, 6]
+4. Adım 18, 27, 22 ve 16 arasında kalır. Sıralı dizi: [2, 16, 18, 22, 27, 6]
+5. Adım 6, 27, 22, 18 ve 16 arasında kalır. Sıralı dizi: [2, 6, 16, 18, 22, 27]
+Dolayısıyla, sıralı dizi şu şekilde olur: [2, 6, 16, 18, 22, 27]
+
+Big-O gösterimi: Insertion Sort, ortalama ve en kötü durumlarda O(n^2) zaman karmaşıklığına sahiptir. En iyi durumda, yani dizi zaten sıralıysa, O(n) zaman karmaşıklığına sahiptir.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı, en iyi durumda, yani dizi zaten sıralıysa, O(n) zaman karmaşıklığına sahip olduğu için O(n) kapsamına girer.
+
+Average case: Aradığımız sayının ortada olması için dizinin n/2. elemanı ile aranan eleman karşılaştırılmalıdır.
+
+Worst case: Aradığımız sayının sonda olması durumunda tüm diziyi tarayarak aranan eleman bulunacaktır.
+
+Best case: Aradığımız sayının dizinin en başında olması durumunda ilk eleman ile aranan eleman karşılaştırılacaktır.
+
+
+Soru:[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+Cevap:
+Dizinin en küçük elemanı olan 2'yi bul ve ilk elemanla yer değiştir. Dizi şu şekle gelir: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+Dizinin en küçük elemanı olan 3'ü bul ve 2. elemanla yer değiştir. Dizi şu şekle gelir: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+Dizinin en küçük elemanı olan 4'ü bul ve 3. elemanla yer değiştir. Dizi şu şekle gelir: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+Dizinin en küçük elemanı olan 5'i bul ve 4. elemanla yer değiştir. Dizi şu şekle gelir: [2, 3, 4, 5, 7, 9, 8, 15, 6]
+Dizi, Selection Sort algoritması kullanılarak sıralandıktan sonra şu şekle gelir: [2, 3, 4, 5, 6, 7, 8, 9, 15]
